@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heart{
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            margin:200px auto;
+            display: block;
+         
+            animation-name:heartAnimation;
+            animation-duration:3s ;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+
+          
+        }
+        @keyframes heartAnimation{
+            0%{
+                transform:scale(1,1);
+            }
+            100%{
+                transform: scale(2,2);
+            }
+        }
+        .heart2{
+            width:200px;
+            height:200px;
+
+            background-image:url('./heart2.png') ;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: -200px;
+            margin-left: 100px;
+            animation:heart2 2.5s linear infinite alternate;
+
+        }
+        @keyframes heart2{
+            0%{
+                transform: scale(1);
+            }
+            5%{
+                transform: scale(1.2);
+            }
+            10%{
+                transform: scale(1.1);
+            }
+            15%{
+                transform: scale(1.25);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+
+    <img src="./heart2.png" width="100" class="heart">
+    <div class="heart2"></div>
+</body>
+</html>
