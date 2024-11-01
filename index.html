@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>this is my h1 tag</h1>
-</body>
+
+    <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <style>
+                    img{
+                        /* border-width:10px;
+                        border-color:blue;
+                        border-style: solid; */
+                        border:2px solid black;
+                    }
+                    h1#h{
+                        color: red;
+                        font-size: 100px;
+                        text-shadow:10px 10px 10px black;
+                    }
+                    div#a1{
+                        /* border: 10px solid red; */
+                        width:400px;
+                        height:400px;
+                        background-color: hotpink;
+                        margin-left: 100px;
+                        padding-left: 20px;
+                        font-size: 30px;
+                        margin: auto;
+                        text-align: center;
+                        line-height: 400px;
+                    }
+                    /* attribut selector */
+                     input[type=text]{
+                        height: 100px;
+                        width: 300px;
+                        background-color: aqua;
+                        font-size: 40px;
+                        color: black;
+                        
+                    }
+                    /* universal selector */
+                    *{
+                        /* border: 10px dotted darkblue; */
+                    }
+                    /* group / combination selector */
+                    h1,h2,h3{
+                        border: 20px dashed hotpink;
+                        width: 500px;
+                        height: 500px;
+                    }
+
+                    /* psedu selector :: */
+                    h1::before{
+                        /* content:url('https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg'); */
+content: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmumGW8d0PtO5hAytIWn_UxMsYSeRvD6ypxX7Iw45gmYZ4uvGapL4Rm8H0lp5ikLvCjlluW61z4QxJOU9mtzgyl7UP_AwnlsunB5LA3NhySOWHKlHLaZOdhuVI1rB6mp4akksqL8b3YrU/s320/I-love-you-animated-emoji.gif');
+
+
+
+
+                    }
+                    /* psedo class selector : */
+                    h3:hover{
+                        background-color: gray;
+                    }
+                    .parent{
+                        height:500px;
+                        width: 500px;
+                        background-color: aqua;
+
+                    }
+                    .c1{
+                        height: 250px;
+                        width: 250px;
+                        background-color: #ff2390;
+                    }
+                    .c2{
+                        height: 250px;
+                        width: 250px;
+                        background-color: black;
+                    }
+                </style>
+            </head>
+
+        <body>
+
+            <h1 id="h"></h1>
+            <!-- <img src="./commerce1.jpg"> -->
+            <!-- <div id="a1">A</div>
+            <input type="text" placeholder="name" class="a2">
+            <h2>Hi </h2>
+            <h3>hello</h3> -->
+
+
+            <div class="parent">
+                <div class="c1"></div>
+                <div class="c1"></div>
+
+            </div>
+             
+        </body>
+
 </html>

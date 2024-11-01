@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 200px;
+            height: 200px;
+            animation-name: bouncingBall;
+            animation-duration: 2s;
+            margin: 100px auto;
+            background: red;
+            /* animation-timing-function: linear; */
+            animation-timing-function: ease-in;
+
+            /* animation-iteration-count: 2; */
+        }
+        /* ease in => starting me slow and baad me fast*/
+        /* ease out=> starting me  fast and baad me slow */
+
+        @keyframes bouncingBall{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+
+
+        .p1{
+            width: 200px;
+            height: 200px;
+            animation-name: translate_x;
+            animation-duration: 2s;
+            /* margin: 100px auto; */
+            background: green;
+            /* animation-timing-function: linear; */
+            /* animation-timing-function: ease-out; */
+            animation-timing-function: linear;
+            /* animation-iteration-count: infinite; */
+
+            /* animation-iteration-count: 2; */
+        }
+        /* ease in => starting me slow and baad me fast*/
+        /* ease out=> starting me  fast and baad me slow */
+
+        /* @keyframes bouncingBall{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        } */
+        @keyframes translate_x{
+            0%{
+                transform: translate(0px)
+            }
+            25%{
+                background: blue;
+            }
+            75%{
+                width: 200px;
+                background: hotpink;
+            }
+            100%{
+                transform: translate(1300px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="parent"></div>
+    <div class="p1"></div>
+
+</body>
+</html>

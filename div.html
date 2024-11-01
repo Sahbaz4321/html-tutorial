@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .parent{
+                        height:500px;
+                        width: 500px;
+                        background-color: aqua;
+
+                    }
+                    .c1{
+                        height: 250px;
+                        width: 250px;
+                        background-color: #ff2390;
+                    }
+                    .c2{
+                        height: 250px;
+                        width: 250px;
+                        background-color: black;
+                    }
+
+                    /* descendent selector syntax parent :hover child */
+                    /* descendent selector parent child */
+                    .parent:hover .c1{
+                        background-color: yellow;
+                        border-radius: 250px;
+                    }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="parent">
+        <div class="c1"></div>
+        <div class="c2"></div>
+
+    </div>
+    
+</body>
+</html>
